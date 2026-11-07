@@ -1,0 +1,13 @@
+{
+  "config": {
+    "default": true,
+    // Long lines are normal in prose and tables.
+    "MD013": false,
+    // Templates repeat placeholder headings such as "Goals" under different parents.
+    "MD024": { "siblings_only": true },
+    // Allow inline HTML comments used as authoring hints.
+    "MD033": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules/**", ".github/pull_request_template.md"]
+}
