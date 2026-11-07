@@ -8,6 +8,7 @@
     // Allow inline HTML comments used as authoring hints.
     "MD033": false
   },
-  "globs": ["**/*.md"],
-  "ignores": ["node_modules/**", ".github/pull_request_template.md"]
+  // Scope: specification documents only. Agent prompts and other Markdown are not linted.
+  "globs": ["README.md", "CONTRIBUTING.md", "docs/**/*.md"],
+  "ignores": ["node_modules/**"]
 }
